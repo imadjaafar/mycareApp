@@ -4,7 +4,7 @@
 // and then run "window.location.reload()" in the JavaScript Console.
 (function () {
     "use strict";
-
+    var profile_pic = '';
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
     function onDeviceReady() {
         if (localStorage.getItem("UserId") === null) {
@@ -22,7 +22,6 @@
         $('.user_nationality').html(localStorage.getItem('NationalityTitle'));
         $('.user_experience').html(localStorage.getItem('Experience'));
         $('.user_language').html(localStorage.getItem('Language'));
-       
 
         var RateHtml = '';
         for (var i = 0; i < localStorage.getItem('Rate') ; i++) {
@@ -47,6 +46,28 @@
         $('#nationality').val(localStorage.getItem('NationalityId'));
         $('#qualification').val(localStorage.getItem('Qualification'));
 
+        $('.choose_profile_photo').click(function (e) {
+            var pictureSource = navigator.camera.PictureSourceType;
+            var destinationType = navigator.camera.DestinationType;
+
+            navigator.camera.getPicture(onSuccess, onFail, {
+                quality: 50,
+                destinationType: Camera.DestinationType.FILE_URI,
+                sourceType: pictureSource.PHOTOLIBRARY
+            });
+        });
+        function onSuccess(imageURI) {
+            console.log(imageURI);
+            profile_pic = imageURI;
+            var image = document.getElementById('user_image');
+            image.src = imageURI;
+        }
+
+
+        function onFail(message) {
+
+        }
+
         $('.submit_edit_profile_btn').click(function () {
           // $('.update-user-profile').submit();
             var formUrl = $('.update-user-profile').attr('action');
@@ -70,7 +91,6 @@
                     });
                 },
                 success: function (response) {
-                    console.log(response);
                     if (response.status.length == 1) {
                         localStorage.setItem('FirstName', (response.status[0].firstname == null ? '' : response.status[0].firstname));
                         localStorage.setItem('LastName', (response.status[0].lastname == null ? '' : response.status[0].lastname));

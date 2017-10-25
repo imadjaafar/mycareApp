@@ -233,7 +233,7 @@
                     <div class="ui-block-a">
                         <div class="user_profile2">
                             <img src="images/profile_pic.png" class="profile_pic patient_image" />
-                            <span class="user_name patient_name">                                
+                            <span class="user_name patient_name i-patient_name">                                
                             </span>
                             <div class="user_data myr_font_reg patient_address">                                
                             </div>
@@ -243,18 +243,18 @@
 
                         <div class="patient_data">
                             <div>
-                                <button class="date_calendar myr_font_bold red_buttons"> 10 January 2017</button>
-                                <span class="blue_color myr_font_bold">Age</span> <span class="myr_font_reg patient_age"></span> 
-                                <span class="blue_color myr_font_bold">Sex</span> <span class="myr_font_reg patient_gender"></span>
+                                <button class="date_calendar myr_font_bold red_buttons i-patientprofilebtn"> 10 January 2017</button>
+                                <span class="blue_color myr_font_bold">Age</span> <span class="myr_font_reg patient_age i-patientprofiletext"></span> 
+                                <span class="blue_color myr_font_bold">Sex</span> <span class="myr_font_reg patient_gender i-patientprofiletext"></span>
                             </div>
                             <div>
-                                <span class="blue_color myr_font_bold"> Nationality </span> <span class="myr_font_reg patient_nationality"></span>
+                                <span class="blue_color myr_font_bold"> Nationality </span> <span class="myr_font_reg patient_nationality i-patientprofiletext"></span>
                             </div>
                             <div>
-                                <span class="blue_color myr_font_bold">Civil ID</span> <span class="myr_font_reg patient_civilid"></span>
+                                <span class="blue_color myr_font_bold">Civil ID</span> <span class="myr_font_reg patient_civilid i-patientprofiletext"></span>
                             </div>
                             <div>
-                                <div class="myr_font_bold diagnosis myr_font_bold">
+                                <div class="myr_font_bold diagnosis myr_font_bold i-diagnosis">
                                     Diagnosis
                                 </div>
                                 <div class="diagnosis_data myr_font_reg patient_diagnisis">
@@ -281,7 +281,7 @@
                         </div>
                     </div>
 
-                    <div class="ui-grid-a block_1">
+                    <!--<div class="ui-grid-a block_1">
                         <div class="ui-block-a" id="second_calendar_div">                            
                             <input type="text" style="display:block" readonly data-role="date" id="second_calendar" class="calendar myr_font_bold green_buttons feb">
                         </div>
@@ -291,7 +291,23 @@
                                 <input type="button" class="backbtn2" value="Back" />
                             </div>
                         </div>
-                    </div>
+                    </div>-->
+
+                    <div class="ui-grid-b block_1 view_calendar_all myr_font_reg   i-patientprofilebtns">
+                        <div class="ui-block-a i-patientprofileviewbtndiv">
+                            <input class="" type="button" value="View" />
+                        </div>
+
+                        <div class="ui-block-b i-patientprofilebackbtndiv">
+                            <input type="button" class="backbtn2" value="Back" />
+                        </div>
+                        <div class="ui-block-c i-patientprofilebbtndiv">
+                            <input type="text" data-role="date" id="second_calendar" class="calendar myr_font_bold green_buttons feb">
+                        </div>
+                    </div><!-- /grid-b -->
+
+
+
                 </div>
             </div>
         </div>
@@ -349,17 +365,17 @@
                                 <input class="myr_font_reg username_input" readonly id="patient-name-2" type="text" />
                             </div>
 
-                            <div class="report_age">
+                            <div class="report_age i-report-age">
                                 <span class="myr_font_bold age_nurse"> Age</span> <input readonly id="patient-gender-2" class="myr_font_reg age_input_nurse" type="text" />
                                 <span class="myr_font_bold age_nurse age2">Sex</span> <input readonly id="patient-age-2" class="myr_font_reg age_input_nurse" type="text" /> 
                             </div>
 
-                            <div class="comple_name">
+                            <div class="comple_name i-comple_name">
                                 <span class="myr_font_bold"> Diagnosis </span>
                                 <input class="myr_font_reg username_input" readonly id="patient-diagnosis-2" type="text" />
                             </div>
 
-                            <div class="vital_signs myr_font_bold blue_buttons">
+                            <!--<div class="vital_signs myr_font_bold blue_buttons i-vital_signs">
                                 Vital signs
 
                                 <fieldset data-role="controlgroup" data-type="horizontal">
@@ -374,6 +390,33 @@
 
                                     <input type="radio" name="vital-signs-id" id="radio-4" value="4" />
                                     <label for="radio-4">8pm</label>
+                                </fieldset>
+                            </div>-->
+                            <div class="vital_signs myr_font_bold blue_buttons i-vital_signs">
+                                Vital signs
+                            </div>
+
+                            <div class="ui-grid-c">
+                                <fieldset class="i-dailyreportfieldset" data-role="controlgroup" data-type="horizontal">
+                                    <div class="ui-block-a i-dailyreports-radiocustom radiobtns-bordercustom">
+                                        <input type="radio" name="vital-signs-id" id="radio-1" value="1" checked="checked" />
+                                        <label for="radio-1">8am</label>
+                                    </div>
+
+                                    <div class="ui-block-b i-dailyreports-radiocustom">
+                                        <input type="radio" name="vital-signs-id" id="radio-2" value="2" />
+                                        <label for="radio-2">12pm</label>
+                                    </div>
+
+                                    <div class="ui-block-c i-dailyreports-radiocustom">
+                                        <input type="radio" name="vital-signs-id" id="radio-3" value="3" />
+                                        <label for="radio-3">4pm</label>
+                                    </div>
+
+                                    <div class="ui-block-d i-dailyreports-radiocustom radiobtns-bordercustom1">
+                                        <input type="radio" name="vital-signs-id" id="radio-4" value="4" />
+                                        <label for="radio-4">8pm</label>
+                                    </div>
                                 </fieldset>
                             </div>
 
@@ -406,15 +449,15 @@
                                 <button class="myr_font_bold blue_buttons medication">Medication</button>
                             </div>
                             <input type="text" name="medicationArray[]" id="medicationArray" style="display:none" />
-                            <div class="medication_block">
-                                <div class="ui-grid-b">
-                                    <div class="ui-block-a">
-                                        <input type="button" value="List of medicines" />
+                            <div class="medication_block i-medication_block">
+                                <div class="ui-grid-b i-gridb-medication_block">
+                                    <div class="ui-block-a i-blocka-medication_block">
+                                        <input class="lom" type="button" value="List of medicines" />
                                     </div>
-                                    <div class="ui-block-b">
+                                    <div class="ui-block-b i-blockb-medication_block">
                                         <input type="button" value="Timing" />
                                     </div>
-                                    <div class="ui-block-c">
+                                    <div class="ui-block-c i-blockc-medication_block">
                                         <input type="button" value="Quantity" />
                                     </div>
                                 </div>
@@ -530,12 +573,31 @@
                             <div class="ui-grid-solo">
                                 <button class="myr_font_bold blue_buttons medication">Dressing Changing pampers</button>
                             </div>
-                            <div class="radio_group">
+                            <!--<div class="radio_group">
                                 <fieldset data-role="controlgroup" data-mini="false">
                                     <input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1" checked="checked" />
                                     <label for="radio-mini-1">Yes</label>
                                     <input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2" />
                                     <label for="radio-mini-2">No </label>
+                                </fieldset>
+                            </div>-->
+
+                            <div class="radio_group ui-grid-c">
+                                <fieldset class="dailyreportsradiobtns-custom" data-role="controlgroup" data-mini="false">
+                                    <input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1" checked="checked" />
+                                    <label for="radio-mini-1">Yes</label>
+                                    <input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2" />
+                                    <label for="radio-mini-2">No </label>
+
+                                    <input type="radio" name="radio-mini" id="radio-mini-3" value="choice-3" checked="checked" />
+                                    <label for="radio-mini-3">Yes</label>
+                                    <input type="radio" name="radio-mini" id="radio-mini-4" value="choice-4" />
+                                    <label for="radio-mini-4">No </label>
+
+                                    <input type="radio" name="radio-mini" id="radio-mini-5" value="choice-5" checked="checked" />
+                                    <label for="radio-mini-5">Yes</label>
+                                    <input type="radio" name="radio-mini" id="radio-mini-6" value="choice-6" />
+                                    <label for="radio-mini-6">No </label>
                                 </fieldset>
                             </div>
 
@@ -563,9 +625,9 @@
 
 
                             <div class="day_part">
-                                <div class="ui-grid-c">
-                                    <div class="ui-block-a">
-                                        <input type="button" value="Morning" />
+                                <div class="ui-grid-c i-ui-grid-c-day_part">
+                                    <div class="ui-block-a ui-block-a-day_part">
+                                        <input class="dailyreport-morningbtn" type="text" value="Morning" />
                                     </div>
                                     <div class="ui-block-b">
                                         <input type="text" name="morning_time" id="morning_time"/>
@@ -580,10 +642,10 @@
                             </div>
 
 
-                            <div class="day_part">
-                                <div class="ui-grid-c">
-                                    <div class="ui-block-a">
-                                        <input type="button" value="Afternoon" />
+                            <div class="day_part ">
+                                <div class="ui-grid-c ">
+                                    <div class="ui-block-a ">
+                                        <input class="dailyreport-morningbtn" type="text" value="Afternoon" />
                                     </div>
                                     <div class="ui-block-b">
                                         <input type="text" name="afternoon_time" id="afternoon_time" />
@@ -600,7 +662,7 @@
                             <div class="day_part">
                                 <div class="ui-grid-c">
                                     <div class="ui-block-a">
-                                        <input type="button" value="Evening" />
+                                        <input class="dailyreport-morningbtn" type="text" value="Evening" />
                                     </div>
                                     <div class="ui-block-b">
                                         <input type="text" name="evening_time" id="evening_time" />
@@ -617,7 +679,7 @@
                             <div class="day_part">
                                 <div class="ui-grid-c">
                                     <div class="ui-block-a">
-                                        <input type="button" value="Night" />
+                                        <input class="dailyreport-morningbtn" type="text" value="Night" />
                                     </div>
                                     <div class="ui-block-b">
                                         <input type="text" name="night_time" id="night_time" />
@@ -640,7 +702,7 @@
                                 <button class="myr_font_bold blue_buttons medication">Upload Report</button>
                             </div>
                             <div class="upload_file">
-                                <input type="button" value="Choose file" class="green_buttons myr_font_bold" />
+                                <input type="button" value="Choose file" class="green_buttons myr_font_bold i-choosefilebtn" id="dailyreportchoosefilebtn" />
                                 <input type="file" id="report_file" name="file" />
                             </div>
                         </form>
@@ -648,8 +710,8 @@
                 </div>
 
                 <div class="done_button2 margin_top_button">
-                    <button class="myr_font_bold done savedailyreportbtn" data-role="button">Done</button>
-                    <button class="myr_font_bold done backbtn3" data-role="button">
+                    <button class="myr_font_bold done i-done savedailyreportbtn" data-role="button">Done</button>
+                    <button class="myr_font_bold done i-done backbtn3" data-role="button">
                         Back
                     </button> 
                 </div>

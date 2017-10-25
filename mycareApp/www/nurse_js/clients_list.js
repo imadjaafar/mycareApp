@@ -298,12 +298,12 @@
                     //    if (exists)
                     //        patientImage = imageUrl;//images/profile_pic.png            
                     //});
-                    html += '<div class="nurse_data"><div class="nurse_data_image"><img src="' + imageUrl + '" /></div>';
-                    html += '<div class="nurse_data_details"><span class="neo_bold nurse_data_name blue_color">' + list[i].firstName + ' ' + list[i].lastName + '</span><br />';
-                    html += '<span class="myr_font_bold red_color">' + list[i].timeFrom + ' - ' + list[i].timeTo + '</span><br />';
-                    html += '<button class="view_details patient-profile" patient-id="' + list[i].userPatientId + '">View Profile</button>' +
-                            '<button class="view_details patient-daily-report" schedule-id="' + list[i].scheduleId + '" patient-id="' + list[i].userPatientId + '">Report</button>' +
-                            '</div></div>';
+                    html += '<div class="nurse_data"><div class="nurse_data_image i-nurse_data_image"><img class="img-circle" src="' + imageUrl + '" /></div>';
+                    html += '<div class="nurse_data_details"><span class="neo_bold nurse_data_name blue_color i-nurse_data_name">' + list[i].firstName + ' ' + list[i].lastName + '</span><br />';
+                    html += '<span class="myr_font_bold red_color i-workhours">' + list[i].timeFrom + ' - ' + list[i].timeTo + '</span><br />';
+                    html += '<div class="ui-grid-a clientsname-uigrida">' + '<button class="view_details i-view-details patient-profile" patient-id="' + list[i].userPatientId + '">View Profile</button>' +
+                            '<button class="view_details patient-daily-report i-view-details" schedule-id="' + list[i].scheduleId + '" patient-id="' + list[i].userPatientId + '">Report</button>' +
+                            '</div></div></div>';
                 });
                 setTimeout(function () {                    
                     $('#client-list-div').html('');
@@ -529,12 +529,12 @@
                 list.forEach(function (listItem, i) {
                     var patientImage = 'images/nurse_logo.png';
                     var imageUrl = localStorage.getItem('MAIN_URL') + "uploads/profiles/" + list[i].patientImage;                  
-                    html += '<div class="nurse_data"><div class="nurse_data_image"><img src="' + imageUrl + '" /></div>';
-                    html += '<div class="nurse_data_details"><span class="neo_bold nurse_data_name blue_color">' + list[i].firstName + ' ' + list[i].lastName + '</span><br />';
-                    html += '<span class="myr_font_bold red_color">' + list[i].timeFrom + ' - ' + list[i].timeTo + '</span><br />';
-                    html += '<button class="view_details patient-profile" patient-id="' + list[i].userPatientId + '">View Profile</button>' +
-                            '<button class="view_details patient-daily-report" schedule-id="' + list[i].scheduleId + '" patient-id="' + list[i].userPatientId + '">Report</button>' +
-                            '</div></div>';
+                    html += '<div class="nurse_data"><div class="nurse_data_image i-nurse_data_image"><img class="img-circle" src="' + imageUrl + '" /></div>';
+                    html += '<div class="nurse_data_details"><span class="neo_bold nurse_data_name blue_color i-nurse_data_name">' + list[i].firstName + ' ' + list[i].lastName + '</span><br />';
+                    html += '<span class="myr_font_bold red_color i-workhours">' + list[i].timeFrom + ' - ' + list[i].timeTo + '</span><br />';
+                    html += '<div class="ui-grid-a clientsname-uigrida">' + '<button class="view_details i-view-details patient-profile" patient-id="' + list[i].userPatientId + '">View Profile</button>' +
+                            '<button class="view_details patient-daily-report i-view-details" schedule-id="' + list[i].scheduleId + '" patient-id="' + list[i].userPatientId + '">Report</button>' +
+                            '</div></div></div>';
                 });
                 setTimeout(function () {
                     $('#main_calendar').datepicker("setDate", currentDate);

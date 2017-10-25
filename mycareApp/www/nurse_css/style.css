@@ -2849,3 +2849,245 @@ background-color: #0e7abf !important;
 {
 	background-color:#0969a6 !important;
 }
+/*------------------------------------------------------- ihab.css ---------------------------------------------*/
+
+ /*Clients names page.css*/ 
+.i-view-details {
+    font-size: 8px !important;
+    padding: 8px 18px !important;
+    margin-left: 2px !important;
+}
+
+.i-nurse_data_image{
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.i-view_calendar_all #view-all-patient-list{
+    padding: 5px 14px !important;
+    background-color: #FFFFFF !important;
+    border: 2px solid #ddd !important;
+    border-radius: 8px !important;
+}
+
+.i-nurse_data_name {
+    font-size: 16px !important;
+    padding-right: 5%;
+}
+
+.clientsname-uigrida{
+    margin-top: 7% !important;
+}
+
+ #main_calendar .ui-datepicker-inline .ui-datepicker-calendar tr td {
+    padding: 0 5px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px !important;
+
+}
+
+#main_calendar .ui-datepicker {
+    width: 99% !important;
+}
+
+.i-workhours{
+    padding-right: 5%;
+    font-size: 12px !important;
+}
+
+.i-view_calendar_all{
+    margin-top: 5% !important;
+}
+
+#main_calendar{
+    margin-bottom: 24% !important;
+}
+
+/*Endddddd*/
+
+
+/*Patient profile page.css*/
+
+.patient_image{
+    border-radius: 50% !important;
+}
+
+
+.i-patient_name{
+    background-color: transparent !important;
+    color: #000 !important;
+    border-bottom: 4px solid #ddd;
+        width: 78px;
+    border-radius: 0;
+}
+
+.i-patientprofilebtn{
+    font-size: 12px !important;
+        padding: 9px 30px !important;
+        border-radius: 6px !important;
+}
+
+.i-diagnosis {
+    padding: 6px 0px;
+    font-size: 12px !important;
+    margin-top: 9% !important;
+}
+
+.i-patientprofiletext{
+    font-size: 14px !important;
+}
+
+.i-patientprofileviewbtndiv input{
+    width: 100% !important;
+    min-height: 40px !important;
+}
+
+.i-patientprofilebackbtndiv input{
+    width: 100% !important;
+    min-height: 40px !important;
+}
+
+.i-patientprofileviewbtndiv {
+        margin: .5em 0;
+        width: 20% !important;
+}
+
+.i-patientprofilebackbtndiv {
+        margin: .5em 0;
+        width: 20% !important;
+}
+
+.i-patientprofilebbtndiv{
+    width: 60% !important;
+}
+
+
+.i-patientprofilebbtndiv .ui-input-text{
+    margin: .45em 0;
+}
+
+/*----------------end-------------------*/
+
+
+/*Daily Reports page.css*/ 
+
+.i-report-age .ui-input-text {
+    width: 11% !important;
+    left: 43px !important;
+}
+
+.report_age .age_nurse.age2 {
+    margin-right: 0px !important;
+    margin-left: 22px !important;
+    text-align: center !important;
+}
+
+.i-report-age .ui-input-text:nth-child(2) {
+    left: 117px !important;
+    width: 30% !important;
+}
+
+.i-comple_name .ui-input-text{
+    width: 70% !important;
+}
+
+.i-vital_signs{
+    text-align:center !important;
+}
+
+.i-dailyreports-radiocustom label{
+    font-size: 12.5px !important;
+    color: #0e7abf !important;
+    margin-top: 10% !important;
+}
+
+.i-dailyreports-radiocustom{
+    background-color: #FFFFFF !important;
+}
+
+.i-dailyreportfieldset{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.radiobtns-bordercustom{
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 6px !important; 
+  
+}
+
+.radiobtns-bordercustom1{
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+.comple_name span, .bt_input span, .hr_input span, .glucose span {
+    font-size: 13px !important;
+}
+
+.i-blockb-medication_block{
+    text-align: center !important;
+}
+
+.i-medication_block .i-blockb-medication_block input{
+    padding: 6px 3px !important;
+}
+
+
+.i-gridb-medicatison_block .i-blocka-medication_block .lom{
+        padding: 6px 5px !important;
+    font-size: 12px !important;
+}
+
+.i-gridb-medication_block div input{
+    width: 98% !important;
+}
+
+.medication_block .ui-grid-b div[class*='ui-block-'] input[type="button"] {
+
+    font-size: 12px !important;
+    padding: 6px 2px !important;
+}
+
+.dailyreportsradiobtns-custom{
+    width: 100% !important;
+}
+
+.dailyreportsradiobtns-custom .ui-checkboxradio-radio-label {
+    font-size: 9px !important;
+    margin-top: 3% !important;
+    color: #0e7abf !important;
+}
+
+.dailyreportsradiobtns-custom .ui-checkboxradio-radio-label .ui-icon-background {
+    width: 11px !important;
+    height: 11px !important;
+}
+
+.diet_chart .ui-grid-c{
+    font-size: 12px !important;
+}
+
+.dailyreport-morningbtn{
+        font-size: 12px !important;
+   text-align: center !important;
+    padding-top: 14% !important;
+    padding-bottom: 14% !important;
+    background-color: #0e7abf !important;
+    color: #FFFFFF !important;
+    width: 100% !important;
+}
+
+.upload_file #dailyreportchoosefilebtn{
+        padding: 6px 12px !important;
+    margin-top: 3% !important;
+}
+
+.i-done {
+    font-size: 13px !important;
+}
+
+.done_button2 button {
+    margin: 12px !important;
+}
