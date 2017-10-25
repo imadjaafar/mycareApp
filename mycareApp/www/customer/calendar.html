@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="jqui/jquery-ui.min.css" />
+<link rel="stylesheet" href="css/calendar.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page"
+		class="bg_pic_create create_profile select_calendar">
+		<div class="margin_page_calendar">
+
+			<div data-role="main" class="ui-content">
+				<h1 class="neo_bold please_create">Please Create your profile</h1>
+				<div id="main_calendar"></div>
+
+				<div class="timer">
+					<div class="timer_image">
+						<img src="images/timer.png" />
+					</div>
+					<div class="timer_time myr_font_bold blue_color">Time</div>
+
+					<div class="from_to">
+						<div>
+							<div class="myr_font_bold from_to_title">from</div>
+							<input class="first_from_to" type="text" maxlength="2" />:<input
+								type="text" maxlength="2" />
+						</div>
+						<br />
+						<div>
+							<div class="myr_font_bold from_to_title">to</div>
+							<input class="first_from_to" type="text" maxlength="2" />:<input
+								type="text" maxlength="2" />
+						</div>
+					</div>
+				</div>
+
+
+				<div class="nurses_number">
+					<div class="nurses_number_image">
+						<img src="images/nurse_logo.png" />
+					</div>
+					<div class="nurses_number_text myr_font_bold green_color">No
+						of nurses</div>
+
+					<div class="plus_minus_nurses">
+						<a href=""><img src="images/minus_nurse.png" class="plus_minus"/></a>
+						<input class="min_max" type="text"  maxlength="1" value="0"/> 
+						<input class="min_max" type="text"  maxlength="1" value="0"/>
+						<a href=""><img src="images/plus_nurse.png" class="plus_minus"/></a>
+					</div>
+				</div>
+
+				<div class="div_search">
+						<a href="#popupDialog"
+						data-rel="popup" data-position-to="window" data-role="button"
+						data-inline="true" data-transition="pop" aria-haspopup="true"
+						aria-owns="popupDialog" aria-expanded="false"
+						class="ui-link ui-btn ui-btn-inline ui-shadow ui-corner-all search_button myr_font_bold"
+						role="button">Search</a>
+
+					<div class="ui-popup-container pop in ui-popup-active"
+						id="popupDialog-popup"
+						style="max-width: 791px; top: 193.5px; left: 209.5px;">
+						<div data-role="popup" id="popupDialog" data-overlay-theme="a"
+							data-theme="a" style="max-width: 400px;"
+							class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+							<div role="main" class="ui-corner-bottom ui-content">
+								<h3 class="ui-title myr_font_bold">Sorry</h3>
+								<p>There is no nurses available at this date.</p>
+								<!-- <a href="#" data-role="button" data-inline="true"
+									data-rel="back" data-theme="a"
+									class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all"
+									role="button">Cancel</a> <a href="#" data-role="button"
+									data-inline="true" data-rel="back" data-transition="flow"
+									data-theme="b"
+									class="ui-link ui-btn ui-btn-b ui-btn-inline ui-shadow ui-corner-all"
+									role="button">Delete</a> -->
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+	<script src="jqui/jquery-ui.min.js"></script>
+	<!-- <script src='js/jquery-ui-datepicker.min.js'></script> -->
+	<script>
+		$('#main_calendar').datepicker({
+			inline : true,
+			firstDay : 0,
+			showOtherMonths : true,
+			dayNamesMin : [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
+		});
+	</script>
+</body>
+</html>

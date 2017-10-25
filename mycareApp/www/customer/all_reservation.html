@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" class="bg_pic_available">
+		<div class="margin_page">
+			<div data-role="main" class="ui-content">
+				<h1 class="neo_bold patient_name">Patient Name</h1>
+				 
+				<div class="diagnosis_patient myr_font_reg">
+					Blood pressure , Sugar, Respiration , Salt, Temperature , Kidney, 
+				</div>
+				<div class="all_reservation">
+					<div class="nurse_data_ltr">
+
+
+						<div class="nurse_data">
+							<div class="nurse_data_image">
+								<img src="images/nurse_logo.png" />
+							</div>
+
+							<div class="nurse_data_details">
+								<span class="neo_bold nurse_data_name blue_color">Nurse
+									Name</span><br /> <span class="myr_font_reg">Work Hours</span><br />
+								<!-- <div class="rate">
+									<i class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div> -->
+								<div class="rating rate">
+								<!-- <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span> -->
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+							</div>
+							</div>
+						</div>
+
+						<div class="from_to">
+							<div>
+								<div class="myr_font_bold from_to_title">from</div>
+								<input class="first_from_to" type="text" maxlength="2" />:<input
+									type="text" maxlength="2" />
+								<div class="myr_font_bold from_to_title">to</div>
+								<input class="first_from_to" type="text" maxlength="2" />:<input
+									type="text" maxlength="2" />
+							</div>
+						</div>
+
+						<div class="reservation_date">10 January 2017</div>
+
+
+						<div class="nurse_data">
+							<div class="nurse_data_image">
+								<img src="images/nurse_logo.png" />
+							</div>
+
+							<div class="nurse_data_details">
+								<span class="neo_bold nurse_data_name blue_color">Nurse
+									Name</span><br /> <span class="myr_font_reg">Work Hours</span><br />
+								<!-- <div class="rate">
+									<i class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star" aria-hidden="true"></i> <i
+										class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div> -->
+								<div class="rating rate">
+								<!-- <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span> -->
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+							</div>
+							</div>
+						</div>
+
+						<div class="from_to">
+							<div>
+								<div class="myr_font_bold from_to_title">from</div>
+								<input class="first_from_to" type="text" maxlength="2" />:<input
+									type="text" maxlength="2" />
+								<div class="myr_font_bold from_to_title">to</div>
+								<input class="first_from_to" type="text" maxlength="2" />:<input
+									type="text" maxlength="2" />
+							</div>
+						</div>
+
+						<div class="reservation_date">10 January 2017</div>
+
+
+
+
+					</div>
+				</div>
+				
+				
+				<div class="total_price myr_font_bold">
+					<span>Total Price</span><button>105 USD</button>
+				</div>
+				
+				<div class="back_confirm myr_font_bold">
+					<button>Back</button><button id="confirm">Confirm</button>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<div data-role="page" class="bg_pic_available" id="payment">
+		<div class="margin_page">
+			<div data-role="main" class="ui-content">
+				<form action="" method="post" class="payment_form">
+					<h1 class="neo_bold please_create">Payment Methods</h1>
+									
+					<div class="ui-grid-a  ">
+						<div class="ui-block-a"><input type="button" class="cash" value="Cash"/></div>
+						<div class="ui-block-b"><input type="button" class="paypal" value="Paypal"/></div>	   
+					</div>
+					
+					
+						
+					<fieldset data-role="controlgroup">	
+					<div class="ui-grid-a cash_paypal_inputs">
+					
+						<div class="ui-block-a">
+						
+							<div class="ui-radio">
+    							<input type="radio" name="radio-enhanced" id="radio-enhanced">
+							</div>
+							<input type="text"/>
+						
+						
+						</div>
+						<div class="ui-block-b first_paypal">
+							<div class="ui-radio">
+    							<input type="radio" name="radio-enhanced" id="radio-enhanced">
+							</div>
+							<div class="card_img">
+								<img src="images/paypal.png"/>
+							</div>
+						</div>
+					   
+					</div>
+					</fieldset>		
+					
+					
+					
+					<div class="ui-grid-solo cash_paypal">
+						<div class="ui-block-a"><input type="button" class="cash" value="Credit Card"/></div>
+					</div>
+					
+					
+					<fieldset data-role="controlgroup">
+					<div class="ui-grid-b cash_paypal_inputs">
+					
+						<div class="ui-block-a">
+						
+							<div class="ui-radio">
+    							<input type="radio" name="radio-enhanced" id="radio-enhanced">
+							</div>
+							<div class="card_img">
+								<img src="images/paypal.png"/>
+							</div>
+						
+						
+						</div>
+						
+						
+						<div class="ui-block-b">
+							<div class="ui-radio">
+    							<input type="radio" name="radio-enhanced" id="radio-enhanced">
+							</div>
+							<div class="card_img">
+								<img src="images/paypal.png"/>
+							</div>
+						</div>	
+						
+						<div class="ui-block-c">
+							<div class="ui-radio">
+    							<input type="radio" name="radio-enhanced" id="radio-enhanced">
+							</div>
+							<div class="card_img">
+								<img src="images/paypal.png"/>
+							</div>
+						</div> 
+						 
+					</div>
+					</fieldset>
+					
+								
+					<div class="payment_inputs">
+						<span class="myr_font_bold"> Name on Card </span>
+						<input class="myr_font_reg card_input" type="text"/>
+					</div>
+					
+					<div class="payment_inputs">
+						<span class="myr_font_bold"> Card Number </span>
+						<input class="myr_font_reg card_input" type="text"/>
+					</div>
+					
+					<div class="payment_inputs_expire">
+						<span class="myr_font_bold"> Expiration Date </span>
+						<div class="first_expire_input"><input class="myr_font_reg" type="text"/></div>
+						<div class="second_expire_input"><input class="myr_font_reg" type="text"/></div>
+					</div>
+					
+					<div class="payment_inputs_code">
+						<span class="myr_font_bold"> CVV Code </span>
+						<input class="myr_font_reg" type="text"/>
+					</div>
+					
+					<hr class="seperator_line"/>
+					
+					<div class="done_button2">
+						<button class="myr_font_bold done" data-role="button">Done</button>
+					</div>
+					
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

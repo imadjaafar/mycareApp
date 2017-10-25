@@ -1,0 +1,62 @@
+@media only screen and (min-device-width : 768px) and (max-device-width: 1024px) /*Ipad mini*/ 
+{
+	.users {
+		width: 80%;
+	}
+	.loader {
+		width: 70%;
+	}
+	.profile_age .age2 {
+		width: 13% !important;
+	}
+	.profile_age fieldset .ui-controlgroup-controls {
+		width: 100%;
+	}
+	.profile_age fieldset .ui-controlgroup-controls .ui-radio {
+		width: calc(100%/ 3);
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width: 364px)
+{
+	.margin_page2 .ui-content {
+		padding: 0.5em;
+	}
+	.margin_page2 {
+		margin-top: 20px;
+	}
+	
+	.from_to .ui-input-text
+	{
+		width:30% !important;
+	}
+	
+	.from_to_history .ui-input-text
+	{
+		width:30% !important;
+	}
+	
+	.nurses_number .ui-input-text
+	{
+		width:29% !important;
+	}
+	
+	.nurses_number .nurses_number_text
+	{
+		vertical-align: middle;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width: 338px)/*iphone 6*/
+{
+ 	th[scope="col"] span {
+    	font-size: 15px !important;
+	}
+	
+	.ui-datepicker-calendar td
+	{
+		font-size:14px !important;
+	} 
+	
+
+}

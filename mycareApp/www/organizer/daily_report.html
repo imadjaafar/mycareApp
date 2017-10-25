@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" class="bg_pic_org">
+	
+		<div class="margin_page">
+		<h1 class="neo_bold please_create red_buttons">Daily Reports</h1>
+			<div data-role="main" class="ui-content">
+				<div class="dir_form">
+					<div class="big_form">
+						<form action="" method="post" enctype="multipart/form-data">
+							
+							<div class="comple_name">
+								<span class="myr_font_bold"> Complete Name </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+
+							<div class="report_age">
+								<span class="myr_font_bold age_nurse"> Age</span> <input
+									class="myr_font_reg age_input_nurse" type="text" /> <span
+									class="myr_font_bold age_nurse age2"> Sex </span> <input
+									class="myr_font_reg age_input_nurse" type="text" />
+							</div>
+							
+							<div class="comple_name">
+								<span class="myr_font_bold"> Diagnosis </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="vital_signs myr_font_bold blue_buttons">
+								Vital signs
+								
+								<fieldset data-role="controlgroup" data-type="horizontal" >
+									<input type="radio" name="radio-choice-2" id="radio-1" value="choice-1" checked="checked" />
+         							<label for="radio-1">8am</label>
+			
+         							<input type="radio" name="radio-choice-2" id="radio-2" value="choice-2"  />
+         							<label for="radio-2">12pm</label>
+         							
+         							<input type="radio" name="radio-choice-2" id="radio-3" value="choice-2"  />
+         							<label for="radio-3">4pm</label>
+         							
+         							<input type="radio" name="radio-choice-2" id="radio-4" value="choice-2"  />
+         							<label for="radio-4">8pm</label>
+								</fieldset>
+							</div>
+							
+							<div class="bt_input">
+								<span class="myr_font_bold"> Body temperature(BT) </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="comple_name">
+								<span class="myr_font_bold"> Blood pressure (BP) </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="hr_input">
+								<span class="myr_font_bold"> Heart rate (HR) </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="comple_name">
+								<span class="myr_font_bold"> Respiration rate (RR) </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="glucose">
+								<span class="myr_font_bold"> Blood glucose level </span>
+								<input class="myr_font_reg username_input" type="text"/>
+							</div>
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Medication</button>
+							</div>
+							
+							<div class="medication_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="button" value="List of medicines"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="button" value="Timing"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="button" value="Quantity"/>
+									</div>
+								</div>
+							</div>
+							
+							<div class="medication_block inputs_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div class="medication_block inputs_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div class="medication_block inputs_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div class="medication_block inputs_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div class="medication_block inputs_block">
+								<div class="ui-grid-b">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Injection</button>
+							</div>
+							
+							<div class="injection_block inputs_block">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div class="injection_block inputs_block">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Dressing Changing pampers</button>
+							</div>
+							<div class="radio_group">
+								<fieldset data-role="controlgroup" data-mini="false" >
+										<input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1" checked="checked" /> 
+										<label for="radio-mini-1">Yes</label> 
+										<input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2" /> 
+										<label for="radio-mini-2">No </label> 
+								</fieldset>
+							</div>
+							
+							
+							
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Diet chart</button>
+							</div>
+							<div class="diet_chart blue_buttons">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+									</div>
+									<div class="ui-block-b">
+										<span>Time</span>
+									</div>
+									<div class="ui-block-c">
+										<span>Description</span>
+									</div>
+									<div class="ui-block-d">
+										<span>Quantity</span>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="day_part">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="button" value="Morning"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="day_part">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="button" value="Afternoon"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							<div class="day_part">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="button" value="Evening"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							<div class="day_part">
+								<div class="ui-grid-c">
+									<div class="ui-block-a">
+										<input type="button" value="Night"/>
+									</div>
+									<div class="ui-block-b">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-c">
+										<input type="text"/>
+									</div>
+									<div class="ui-block-d">
+										<input type="text"/>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Nurse Report</button>
+							</div>
+							<textarea class="daily_text"></textarea>
+							
+							<div class="ui-grid-solo">
+								<button class="myr_font_bold blue_buttons medication">Upload Report</button>
+							</div>
+							
+							
+								<div class="upload_file">
+									
+										<input type="button" value="Choose file" class="green_buttons myr_font_bold"/>
+									
+									
+										<input type="text"/>
+									
+								</div>
+							
+						</form>
+					</div>
+				</div>
+				
+				<div class="done_button2 margin_top_button">
+						<button class="myr_font_bold done" data-role="button">Done</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'NeoSans-Bold';
+  src: url('NeoSans-Bold.woff') format('woff'),
+       url('NeoSans-Bold.ttf') format('truetype'),
+       url('NeoSans-Bold.svg#NeoSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo_Sans_Bold-1';
+  src: url('Neo_Sans_Bold-1.eot');
+  src: url('Neo_Sans_Bold-1.woff2') format('woff2'),
+       url('Neo_Sans_Bold-1.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('MyriadPro-Regular.eot');
+  src: url('MyriadPro-Regular.woff2') format('woff2'),
+       url('MyriadPro-Regular.woff') format('woff'),
+       url('MyriadPro-Regular.ttf') format('truetype'),
+       url('MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('MyriadPro-Bold.eot');
+  src: url('MyriadPro-Bold.woff2') format('woff2'),
+       url('MyriadPro-Bold.woff') format('woff'),
+       url('MyriadPro-Bold.ttf') format('truetype'),
+       url('MyriadPro-Bold.svg#MyriadPro-Bold') format('svg'),
+       url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AdobeArabic-Regular';
+  src: url('AdobeArabic-Regular.eot');
+  src: url('AdobeArabic-Regular.woff2') format('woff2'),
+       url('AdobeArabic-Regular.woff') format('woff'),
+       url('AdobeArabic-Regular.ttf') format('truetype'),
+       url('AdobeArabic-Regular.svg#AdobeArabic-Regular') format('svg'),
+       url('AdobeArabic-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.neo_bold
+{
+	font-family: 'NeoSans-Bold' !important;
+}
+
+.red_color
+{
+	color:#e6222c;
+}
+
+.green_color
+{
+	color:#6cc59f !important;
+}
+
+.blue_color
+{
+	color:#0e7abf !important;
+}
+
+.myr_font_reg
+{
+	font-family: 'MyriadPro-Regular' !important;
+	font-weight: normal;
+}
+
+.myr_font_bold
+{
+	font-family: 'MyriadPro-Bold' !important;
+	font-weight: normal;
+}
+
+.adob_reg
+{
+	font-family: 'AdobeArabic-Regular' !important;
+}
+
+
+/*end classes*/

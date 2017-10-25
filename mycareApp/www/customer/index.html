@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" class="bg_pic">
+		<div data-role="main" class="ui-content">
+			<figure class="main_logo">
+				<img src="images/main_logo.png" />
+			</figure>
+			<div class="ui-grid-b users">
+				<span class="ui-block-a" >
+					<img src="images/customer_logo.png" />
+					<span class="user_title1 neo_bold blue_color">Patient</span>
+				</span>
+				<span class="ui-block-b">
+					<img src="images/nurse_logo.png" />
+					<span class="user_title2 neo_bold green_color">Nurse</span>
+				</span>
+				<span class="ui-block-c"> 
+					<img src="images/organizer_logo.png" />
+					<span class="user_title3 neo_bold red_color">Organizer</span>
+				</span>
+			</div>
+			<div class="loading_div" id="loading_div">
+				<div class="loader"></div>
+				<h4 class="neo_bold red_color loading_title">lOADING ...</h4>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div data-role="page" class="bg_pic" id="page2">
+		<div data-role="main" class="ui-content">
+			<figure class="main_logo">
+				<img src="images/main_logo.png" />
+			</figure>
+			<div class="signin_form">
+				<form action="profile.html" method="post">
+					<!-- <label for="text-basic">Text input:</label> -->
+					<input type="text" name="email" id="email"
+						class="email myr_font_reg" value=""
+						placeholder="Add e-mail address"> <input type="password"
+						name="password" id="password" class="password myr_font_reg"
+						value="" placeholder="Add Password"> <input type="submit"
+						data-role="button" value="Sign in" class="green_bg myr_font_bold" id="sign_in"/>
+				</form>
+				<div class="forget_signup ui-grid-a myr_font_reg">
+					<a href="" class="ui-block-a">Forgot password?</a> <span
+						class="ui-block-b"> New here? <a href="#signup_page"
+						class="myr_font_bold" data-transition="slide"> Sign Up </a></span>
+				</div>
+				<button class="fb_signin myr_font_bold" data-role="button">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>Sign in
+					with FACEBOOK
+				</button>
+				<div class="main_languages">
+					<div class="ui-grid-solo">
+						<div class="ui-block-a">
+							<button class="language green_color neo_bold" data-role="button">
+								Language</button>
+						</div>
+					</div>
+					<div class="">
+						<div class="en">
+							<button type="button" class="myr_font_reg">English</button>
+						</div>
+						<div class="ar">
+							<button class="adob_reg" type="button" dir="rtl" lang="ar">العربية</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div data-role="page" class="bg_pic_nurse" id="page3">
+		<div data-role="main" class="ui-content">
+			<figure class="main_logo">
+				<img src="images/main_logo.png" />
+			</figure>
+			<div class="signin_form">
+				<form action="" method="post">
+					<!-- <label for="text-basic">Text input:</label> -->
+					<input type="text" name="email" id="email"
+						class="email myr_font_reg" value=""
+						placeholder="Add e-mail address"> <input type="password"
+						name="password" id="password" class="password myr_font_reg"
+						value="" placeholder="Add Password"> <input type="submit"
+						data-role="button" value="Sign in" class="green_bg myr_font_bold" />
+				</form>
+				<div class="forget_signup ui-grid-a myr_font_reg">
+					<a href="" class="ui-block-a">Forgot password?</a> <span
+						class="ui-block-b"> New here? <a href="#signup_page"
+						class="myr_font_bold" data-transition="slide"> Sign Up </a></span>
+				</div>
+				<button class="fb_signin myr_font_bold" data-role="button">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>Sign in
+					with FACEBOOK
+				</button>
+				<div class="main_languages">
+					<div class="ui-grid-solo">
+						<div class="ui-block-a">
+							<button class="language green_color neo_bold" data-role="button">
+								Language</button>
+						</div>
+					</div>
+					<div class="">
+						<div class="en">
+							<button type="button" class="myr_font_reg">English</button>
+						</div>
+						<div class="ar">
+							<button class="adob_reg" type="button" dir="rtl" lang="ar">العربية</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div data-role="page" class="bg_pic" id="page4">
+		<div data-role="main" class="ui-content">
+			<figure class="main_logo">
+				<img src="images/main_logo.png" />
+			</figure>
+			<div class="signin_form">
+				<form action="" method="post">
+					<!-- <label for="text-basic">Text input:</label> -->
+					<input type="text" name="email" id="email"
+						class="email myr_font_reg" value=""
+						placeholder="Add e-mail address"> <input type="password"
+						name="password" id="password" class="password myr_font_reg"
+						value="" placeholder="Add Password"> <input type="submit"
+						data-role="button" value="Sign in" class="green_bg myr_font_bold" />
+				</form>
+				<div class="forget_signup ui-grid-a myr_font_reg">
+					<a href="" class="ui-block-a">Forgot password?</a> <span
+						class="ui-block-b"> New here? <a href="#signup_page"
+						class="myr_font_bold" data-transition="slide"> Sign Up </a></span>
+				</div>
+				<button class="fb_signin myr_font_bold" data-role="button">
+					<i class="fa fa-facebook-square" aria-hidden="true"></i>Sign in
+					with FACEBOOK
+				</button>
+				<div class="main_languages">
+					<div class="ui-grid-solo">
+						<div class="ui-block-a">
+							<button class="language green_color neo_bold" data-role="button">
+								Language</button>
+						</div>
+					</div>
+					<div class="">
+						<div class="en">
+							<button type="button" class="myr_font_reg">English</button>
+						</div>
+						<div class="ar">
+							<button class="adob_reg" type="button" dir="rtl" lang="ar">العربية</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div data-role="page" class="bg_pic_signup signup_page" id="signup_page">
+		<div class="margin_page">
+
+			<div data-role="main" class="ui-content">
+			<h1 class="neo_bold please_create">Sign Up</h1>
+			<form action="" method="post" class="signup_form">
+				<!-- <input type="file" /> -->
+				<!-- <div class="user_pic"></div> -->
+				<img src="images/profile_pic.png" class="profile_pic"/>
+				
+					<div class="signup_inputs">
+						<span class="myr_font_bold"> Username </span>
+						<input class="myr_font_reg username_input" type="text"/>
+					</div>
+					
+					<div class="signup_inputs">
+						<span class="myr_font_bold"> Email </span>
+						<input class="myr_font_reg username_input" type="text"/>
+					</div>
+					
+					<div class="signup_inputs_pw">
+						<span class="myr_font_bold"> Password </span>
+						<input class="myr_font_reg" type="password"/>
+					</div>
+					
+					<div class="signup_inputs_pw">
+						<span class="myr_font_bold"> Confirm Password </span>
+						<input class="myr_font_reg" type="password"/>
+					</div>
+					
+					
+					<button class="myr_font_bold create_account" data-role="button" id="create_account">
+						Create Account
+					</button>
+					
+					<button class="fb_signup myr_font_bold" data-role="button">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>Sign in
+						with FACEBOOK
+					</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>

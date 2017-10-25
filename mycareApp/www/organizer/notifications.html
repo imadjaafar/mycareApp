@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	<div data-role="page" class="bg_pic_org">
+
+		<div data-role="header" id="menu">
+			<div class="margin_page">
+				<a href="#popupDialog" id="hum_menu" data-rel="popup"
+					data-position-to="window" data-transition="flip"
+					class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">
+					<div class="dropbtn">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</a> <a id="notif_bell2"> <i class="fa fa-bell-o" aria-hidden="true"></i>
+				</a>
+				<div data-role="popup" id="popupDialog" data-overlay-theme="b"
+					data-theme="a" data-dismissible="false" style="max-width: 400px;">
+					<div role="main" class="ui-content">
+						<div class="pic_menu"> <img src="images/profile_pic.png"/></div>
+						<h3 class="name_menu myr_font_bold">Adam Admin</h3>
+						<button class="myr_font_bold blue_buttons">Add Customer</button>
+						<button class="myr_font_bold blue_buttons">Remove Customer</button>
+						<button class="myr_font_bold blue_buttons">View All Customers</button>
+						<button class="myr_font_bold red_buttons">Add Nurser</button>
+						<button class="myr_font_bold red_buttons">Remove Nurse</button>
+						<button class="myr_font_bold red_buttons">View All Nursers</button>
+						<button class="myr_font_bold gray_buttons">Sign out</button>
+					</div>
+					<div data-role="footer" id="popup_footer">
+						<a href="#"
+							class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+							data-rel="back">
+							<div class="dropbtn2">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</div>
+
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<div class="margin_page">
+			<div data-role="main" class="ui-content">
+				<h1 class="neo_bold notif">Notifications</h1>
+				
+				<div class="div1_notif">
+					<img src="images/notif.png"/>
+					<span class="myr_font_reg">Morning Nurse Request</span>
+				</div>
+				
+				<div class="div2_notif">
+					<img src="images/notif.png"/>
+					<span class="myr_font_reg">Morning Nurse Request</span>
+				</div>
+				<div class="div1_notif">
+					<img src="images/notif.png"/>
+					<span class="myr_font_reg">Morning Nurse Request</span>
+				</div>
+				
+				<div class="div2_notif">
+					<img src="images/notif.png"/>
+					<span class="myr_font_reg">Morning Nurse Request</span>
+				</div>
+				
+				
+		</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

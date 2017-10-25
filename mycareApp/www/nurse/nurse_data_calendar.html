@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>My Care</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="font/font.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/media_style.css" />
+<link rel="stylesheet" href="jqui/jquery-ui.min.css" />
+<link rel="stylesheet" href="css/calendar.css" />
+<link rel="stylesheet" href="awesome/css/font-awesome.min.css" />
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+<script src="js/jquery2.0.0.min.js"></script>
+<script src="jquery_mobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/nurse_data_calendar.js"></script>
+<script src="/js/general.js"></script>
+<script type="text/javascript" src="/cordova.js"></script>
+<script type="text/javascript" src="/scripts/platformOverrides.js"></script>
+</head>
+
+<body>
+	<div data-role="page" class="bg_pic_nurse"  id="nurse_profile">
+	
+	
+				<div data-role="header" id="menu">
+			<div class="margin_page">
+				<a href="#popupDialog" id="hum_menu" data-rel="popup"
+					data-position-to="window" data-transition="flip"
+					class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">
+					<div class="dropbtn">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</a> <a id="notif_bell"> <i class="fa fa-bell-o" aria-hidden="true"></i>
+				</a>
+				<div data-role="popup" id="popupDialog" data-overlay-theme="b"
+					data-theme="a" data-dismissible="false" style="max-width: 400px;">
+					<div role="main" class="ui-content user-menu">
+						<div class="pic_menu "> <img class="user_image" src="images/profile_pic.png"/></div>
+						<h3 class="name_menu myr_font_bold user_name"></h3>
+						
+						<button class="myr_font_bold green_buttons" id="clients_list">View All Customers</button>
+						
+						<button class="myr_font_bold gray_buttons" onclick="logout()">Sign out</button>
+					</div>
+					<div data-role="footer" id="popup_footer">
+						<a href="#"
+							class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+							data-rel="back">
+							<div class="dropbtn2">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+							</div>
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="margin_page3" >
+			<div data-role="main" class="ui-content">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="user_profile2">
+							<img src="images/profile_pic.png" class="profile_pic user_image" /> <img
+								src="images/cam.png" class="edit_pic" /> <span class="user_name"></span>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<a id="nurse_edit_profile_btn"><img class="edit_image" src="images/edit.png" /></a><br />
+						<br />
+						<div class="patient_data">
+							<div>
+								<span class="blue_color myr_font_bold">Age</span> <span
+									class="myr_font_reg user_age"></span> <span
+									class="blue_color myr_font_bold"> Sex</span> <span
+									class="myr_font_reg user_gender"></span>
+							</div>
+							<div>
+								<span class="blue_color myr_font_bold"> Nationality </span> <span
+									class="myr_font_reg user_nationality"></span>
+							</div>
+							<div>
+								<span class="blue_color myr_font_bold">Experience</span> <span
+									class="myr_font_reg user_experience"></span>
+							</div>
+							
+							<div>
+								<span class="blue_color myr_font_bold">Language</span> <span
+									class="myr_font_reg user_language"></span>
+							</div>
+							
+							<div class="rating rate user_rate">
+								<!-- <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span> -->
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/full_star.png" style="width:23px;display:inline-block;" class="empty_to_full full"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+								<img src="images/empty_star.png" style="width:23px;display:inline-block;" class="empty_to_full empty"/>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<div id="main_calendar"></div>
+			</div>
+		</div>
+        </div>
+
+        <div data-role="page" class="bg_pic_nurse" id="nurse_edit_profile">
+            <div data-role="header" id="menu">
+                <div class="margin_page">
+                    <a href="#popupDialog2" id="hum_menu" data-rel="popup"
+                       data-position-to="window" data-transition="flip"
+                       class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-b">
+                        <div class="dropbtn">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a> <a id="notif_bell">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    </a>
+                    <div data-role="popup" id="popupDialog2" data-overlay-theme="b"
+                         data-theme="a" data-dismissible="false" style="max-width: 400px;">
+                        <div role="main" class="ui-content user-menu">
+                            <div class="pic_menu "> <img class="user_image" src="images/profile_pic.png" /></div>
+                            <h3 class="name_menu myr_font_bold user_name"></h3>
+                            <button class="myr_font_bold green_buttons" id="clients_list2">View All Customers</button>
+
+                            <button class="myr_font_bold gray_buttons" onclick="logout()">Sign out</button>
+                        </div>
+                        <div data-role="footer" id="popup_footer">
+                            <a href="#"
+                               class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+                               data-rel="back">
+                                <div class="dropbtn2">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg_pic_nurse create_profile" >
+                <div class="margin_page">
+                    <!-- <div data-role="header" class="ui-content">
+                    <h1 class="neo_bold">Please Create your profile</h1>
+                </div> -->
+
+                    <div data-role="main" class="ui-content">
+                        <!--<form action="update-nurse-profile"  data-role="form" method="post" class="signup_form update-user-profile">-->
+                        <div action="update-nurse-profile" data-role="form" method="post" class="signup_form update-user-profile">
+                            <!-- <input type="file" /> -->
+                            <!-- <div class="user_pic"></div> -->
+                            <h1 class="neo_bold please_create">Edit your Profile</h1>
+                            <div class="user_profile">
+                                <img src="images/profile_pic.png" class="profile_pic user_image" />
+                                <img src="images/cam.png" class="edit_pic" />
+                            </div>
+
+                            <div class="profile_inputs">
+                                <span class="myr_font_bold"> First Name </span> <input class="myr_font_reg username_input" id="first_name" value="" type="text" />
+                            </div>
+
+                            <div class="profile_inputs">
+                                <span class="myr_font_bold"> Last Name </span> <input id="last_name" value="" class="myr_font_reg username_input" type="text" />
+                            </div>
+
+                            <div class="profile_age">
+                                <span class="myr_font_bold age_nurse"> Age</span>                                
+                                <input class="myr_font_reg age_input_nurse" id="gender_id" value="" type="text" />
+
+                                <span class="myr_font_bold age_nurse age2"> Sex </span>
+                                <input class="myr_font_reg age_input_nurse" id="age" value="" type="text" />
+
+                            </div>
+
+                            <div class="profile_natio">
+                                <span class="myr_font_bold natio"> Nationality </span>
+                                <input type="text" name="natio" id="nationality" value="" class="myr_font_reg" />
+                                <span class="myr_font_bold civil"> Experience </span>
+                                <input type="text" name="civil" id="experience" value="" class="myr_font_reg" />
+                            </div>
+
+
+                            <div class="profile_phone">
+                                <span class="myr_font_bold"> language knows</span> <input id="language" value="" class="myr_font_reg phone_input" type="text" />
+                            </div>
+
+
+                            <div class="profile_textarea">
+                                <span class="myr_font_bold"> Qualification </span>
+                                <textarea rows="15" name="qualification" id="qualification"></textarea>
+                            </div>
+
+                            <div class="done_button">
+                                <button class="myr_font_bold done submit_edit_profile_btn" data-role="button">
+                                    Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	
+		<script src="jqui/jquery-ui.min.js"></script>
+	<!-- <script src='js/jquery-ui-datepicker.min.js'></script> -->
+	<script>
+        $('#main_calendar').datepicker({
+            inline: true,
+            firstDay: 0,
+            showOtherMonths: true,
+            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            format: 'dd.mm.yyyy',
+            startDate: '01.01.2012',
+            endDate: ''
+        }).on("show", function () {
+            $(this).val("01.05.2012").datepicker('update');
+        });
+	</script>
+</body>
+</html>
